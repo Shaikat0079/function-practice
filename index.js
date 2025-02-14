@@ -5,3 +5,10 @@ function tenTimes(number) {
 const bigNumber = tenTimes(99);
 
 console.log(bigNumber)
+
+function addPrices(price1,price2) {
+    return price1+price2
+}
+const bill = addPrices(5,80)
+
+console.log(bill);
