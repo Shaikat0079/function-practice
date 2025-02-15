@@ -23,3 +23,24 @@ function isEven(number) {
 console.log(isEven(10))
 
 console.log(isEven(5))
+
+function sumOfNumbers(numbers){
+    // console.log(numbers)
+    let sum = 0;
+    for(i=0;i<numbers.length;i++){
+        sum+=numbers[i];
+    }
+    console.log(sum)
+}
+
+sumOfNumbers([10,20,30,40])
+
+function againSumOfNumbers(numbers){
+    let sum = 0
+    for(const number of numbers){
+        sum += number
+    }
+    return sum;
+}
+
+console.log(againSumOfNumbers([30,40,50]))
