@@ -70,3 +70,58 @@ function sumOfEvenNumbers(numbers) {
 }
 
 console.log(sumOfEvenNumbers([10,5, 31,4,20]))
+
+function isLeapYear(year){
+    if (year % 100 !== 0 && year%4 === 0){
+        return true;
+    }
+    if(year%400 === 0){
+        return true;
+    }
+
+    return false;
+}
+
+
+console.log(isLeapYear(2100));
+console.log(isLeapYear(2400));
+console.log(isLeapYear(1900));
+console.log(isLeapYear(2052));
+
+
+// odd average
+
+function addOdds(numbers) {
+
+    const oddNumbers = []
+    let sum=0;
+    for(const number of numbers){
+        if(number%2!==0){
+             oddNumbers.push(number);
+        }
+    }
+
+    for(const add of oddNumbers){
+        sum += add;
+    }
+
+    return sum/oddNumbers.length;
+}
+
+console.log(addOdds([10,5, 31,4,20]))
+console.log(addOdds([42,13,58,65,81,96,7]))
+
+
+function removeDuplicate(arr) {
+    const unique = []
+    for(const item of arr){
+        if(unique.includes(item)===false){
+            unique.push(item)
+        }
+    }
+
+    return unique;
+}
+
+console.log(removeDuplicate(["Alpha","Beta","Gamma","Sigma","Alpha","Sigma"]))
+console.log(removeDuplicate([10,10,20,20,30,40,50,50,60,60,60,60]))
