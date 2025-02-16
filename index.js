@@ -44,3 +44,29 @@ function againSumOfNumbers(numbers){
 }
 
 console.log(againSumOfNumbers([30,40,50]))
+
+
+function evenNumbers(numbers){
+    const even = []
+    for(const number of numbers){
+        if(number%2===0){
+            even.push(number)
+        }
+    }
+
+    return even;
+}
+
+console.log(evenNumbers([10,5, 31,4,20]))
+
+function sumOfEvenNumbers(numbers) {
+    sum = 0;
+    for(const number of numbers){
+        if(number%2 === 0){
+            sum += number
+        }
+    }
+    return sum;
+}
+
+console.log(sumOfEvenNumbers([10,5, 31,4,20]))
